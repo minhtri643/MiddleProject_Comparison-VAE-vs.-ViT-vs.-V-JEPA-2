@@ -1,0 +1,4 @@
+Model,Clean_RankMe,Foggy_RankMe,RankMe_Retention_Pct,Clean_Cosine_Subject_A,Foggy_Cosine_Subject_A,Delta_Cosine_A
+VAE,3.58,3.44,96.09,-0.534,-0.1532,0.3808
+ViT,112.98,114.63,101.46,0.4244,0.4192,-0.0052
+V-JEPA 2,166.23,157.07,94.49,0.4954,0.4875,-0.0079

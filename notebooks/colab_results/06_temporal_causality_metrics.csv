@@ -1,0 +1,4 @@
+Model,Chronological Target CosSim,Shuffled Target CosSim,Cosine Drop (Delta),Chrono MSE,Shuffled MSE,Scientific Finding
+SD-VAE,0.9996,0.9367,6.29%,0.0152,1.0948,High-frequency surface pixel coding; distribution drift under scrambling.
+ViT-Base,0.9615,0.8435,11.80%,0.0323,0.13,Sensitive to sequence order (11.80% drop); loses semantic manifold continuity.
+Meta V-JEPA 2,0.9833,0.882,10.13%,0.1039,0.7516,Internalizes temporal dynamics (MSE jumps 7.23x); proves awareness of physical Arrow of Time.

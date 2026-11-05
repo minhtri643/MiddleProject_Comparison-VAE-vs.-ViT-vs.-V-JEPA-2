@@ -1,0 +1,41 @@
+# Configuration for World Model Representation Comparison
+# Evaluation of VAE vs. ViT vs. V-JEPA 2
+
+models:
+  vae:
+    name: "VAE"
+    checkpoint: "stabilityai/sd-vae-ft-mse"
+    expected_grid: [32, 32]
+    latent_dim: 4
+  vit:
+    name: "ViT"
+    checkpoint: "google/vit-base-patch16-224"
+    expected_grid: [14, 14]
+    latent_dim: 768
+  vjepa:
+    name: "V-JEPA 2"
+    checkpoint: "facebook/vjepa2-vitl-fpc64-256"
+    expected_grid: [16, 16]
+    latent_dim: 1024
+    tubelet_size: 2
+
+data:
+  image_raw_path: "data/raw/sample_image.jpg"
+  video_raw_path: "data/raw/sample_video.mp4"
+  target_size: [256, 256]
+  num_frames: 4  # Set to 16 for full video tubelet evaluation, 4 for low VRAM (<=4GB)
+
+analysis:
+  normalize_before_pca: true
+  pca_components: 3
+  queries:
+    A_subject: [0.50, 0.65]
+    B_background: [0.10, 0.12]
+
+hardware:
+  device: "auto"     # "auto", "cuda", "cpu"
+  use_fp16: true
+
+output:
+  root_dir: "RESULT"
+

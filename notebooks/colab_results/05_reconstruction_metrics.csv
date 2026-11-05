@@ -1,0 +1,4 @@
+Model,Latent Shape,Decoder Architecture,PSNR (dB),SSIM,MSE,MAE
+SD-VAE,"(32, 32, 4)",Native Continuous Deconvolution,35.25,0.9743,19.4,2.21
+ViT-Base,"(14, 14, 768)",MAE-Style Linear Patch Probing,17.37,0.3639,1190.44,24.99
+Meta V-JEPA 2,"(16, 16, 1024)",Generative Readout Probing,15.76,0.2451,1724.49,29.59
